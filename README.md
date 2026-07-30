@@ -63,7 +63,7 @@ Acesse no seu navegador:
 Abra http://localhost:3000 (ou a porta informada no terminal).
 ```
 
-👨‍💻 Autor
+👨‍💻 
 Desenvolvido por Julio Cesar Viana Santos.
 
 Sinta-se à vontade para entrar em contato ou enviar sugestões!
