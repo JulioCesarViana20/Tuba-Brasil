@@ -71,7 +71,3 @@ Sinta-se à vontade para entrar em contato ou enviar sugestões!
 
 ---
 
-### Como adicionar no GitHub:
-1. No seu repositório no GitHub, clique no botão **Add a README** (ou crie um arquivo chamado `README.md` na raiz do projeto).
-2. Cole o código acima.
-3. Clique em **Commit changes**.
