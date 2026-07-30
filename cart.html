@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho — Tuba Brasil</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body class="cart-page">
+    <header class="cart-header">
+        <div class="cart-header-inner">
+            <button type="button" class="return-icon" aria-label="Voltar à loja">
+                <img src="img/setaC.png" alt="">
+                <span>Voltar</span>
+            </button>
+            <h1 class="cart-title">Carrinho</h1>
+            <span class="cart-header-spacer" aria-hidden="true"></span>
+        </div>
+    </header>
+
+    <main class="cart-main">
+        <div id="cart-empty" class="cart-empty" hidden>
+            <p class="cart-empty-title">Carrinho vazio</p>
+            <p class="cart-empty-text">Adicione produtos na página inicial e volte aqui para finalizar.</p>
+            <button type="button" class="btn btn-primary return-icon-inline">Ir à loja</button>
+        </div>
+
+        <div id="cart-filled" class="cart-layout" hidden>
+            <ul id="cart-list" class="cart-list" aria-label="Itens no carrinho"></ul>
+
+            <aside class="cart-summary" aria-labelledby="resumo-pedido">
+                <h2 id="resumo-pedido" class="cart-summary-title">Resumo</h2>
+                <div class="cart-summary-row">
+                    <span>Subtotal</span>
+                    <span id="cart-subtotal">R$ 0,00</span>
+                </div>
+                <div class="cart-summary-row cart-summary-total">
+                    <span>Total</span>
+                    <strong id="cart-total">R$ 0,00</strong>
+                </div>
+                <button type="button" id="btn-finalizar" class="btn btn-primary btn-block">Pagar com Mercado Pago</button>
+                <button type="button" id="btn-pix" class="btn btn-ghost btn-block">Pagar com Pix</button>
+                <button type="button" id="btn-limpar" class="btn btn-ghost btn-block">Limpar carrinho</button>
+                <div id="pix-payment-result" class="cart-pix-result" hidden></div>
+            </aside>
+        </div>
+    </main>
+
+    <script src="src/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuba Brasil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="intro-splash" id="intro-splash" aria-hidden="true">
+        <img src="img/logoOficial.png" alt="Logo Tuba Brasil" class="intro-splash-logo" width="200" height="200">
+    </div>
+    <script>
+       //script pra animacao no html so pra facilitar---->
+    (function () {
+        var el = document.getElementById('intro-splash');
+        if (!el) return;
+        function removeIntro() {
+            if (el && el.parentNode) el.parentNode.removeChild(el);
+        }
+        el.addEventListener('animationend', function (ev) {
+            if (ev.target === el) removeIntro();
+        });
+        var ms = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 800 : 5600;
+        setTimeout(removeIntro, ms);
+    })();
+    </script>
+    <div class="page-shell">
+        <header class="site-header container">
+            <div class="brand">
+                <img src="img/logoMarca.jpg" alt="Logo Tuba Brasil">
+                <div>
+                    <h1>Tuba </h1>
+                    <p>Marca de roupa com estilo único e identidade brasileira!</p>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <a href="#home">Home</a>
+                <a href="#colecao">Coleção</a>
+                <a href="#contato">Contato</a>
+            </nav>
+            <div class="cart-icon">
+                <img src="img/carrinho.png" alt="Carrinho de compras">
+            </div>
+        </header>
+<!-- //introduction section -->
+        <main>
+            <section id="home" class="hero container">
+                <div class="hero-copy">
+                    <span class="eyebrow">Quem somos nós?</span>
+                    <h2>Tuba, o estilo que marca!</h2>
+                    <p>A Tuba nasceu da união entre estilo, autenticidade e sofisticação, trazendo peças inspiradas na moda premium para quem valoriza elegância, conforto e presença em cada detalhe. 
+                    Mais do que roupas, criamos presença.</p>
+                    <p>Na Tuba, acreditamos que vestir-se bem vai além da aparência é sobre identidade, presença e estilo. Inspirada na sofisticação minimalista das grandes referências da moda contemporânea, nossa marca nasceu para entregar peças premium que unem elegância, conforto e autenticidade no dia a dia.
+</p>
+                    <div class="hero-actions">
+                        <a class="button primary" href="#colecao">Ver coleção</a>
+                        
+                    </div>
+                </div>
+                <div class="hero-illustration">
+                    <div class="image-grid">
+                        <article class="image-card">
+                            <div class="image-placeholder"><img class="great-photo" src="img/cartoes.png" alt="Roupa 1"></div>
+                           
+                        </article>
+                    </div>
+                </div>
+            </section>
+<!-- // Collection section --> 
+            <section id="colecao" class="section container">
+    <div class="section-heading">
+        <span class="eyebrow">Coleção</span>
+        <h3>O que temos hoje</h3>
+    </div>
+
+    <div class="grid cards-grid">
+
+        <article class="card">
+            <h4>Seu conforto!</h4>
+            <img src="img/sacolas.png" alt="Roupa 3" class="card-image">
+        </article>
+
+    </div>
+</section>
+
+ <!-- // looks section --> 
+
+          
+               
+    <!-- // Contact section -->   
+
+            <section id="contato" class="section container contact-panel">
+                <div class="section-heading">
+                    <span class="eyebrow">Contato</span>
+                    <h3>fale conosco!</h3>
+                </div>
+                <p>Email | WhatsApp</p>
+                <div class="contact-actions">
+                    <a class="button primary" href="mailto:contato.tubabrasil@gmail.com">Enviar email</a>
+                    <a class="button secondary" href="https://wa.me/556282801375?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Tuba%20Brasil" target="_blank"><img class="zap" src="img/whatsapp.png" alt="WhatsApp"></a>
+                    <a class="button third" href="#home">Voltar ao topo</a>
+                </div>
+            </section>
+        </main>
+<!-- //footer section -->
+        <footer class="site-footer container">
+            <p> © 2026 Tuba Brasil. Todos os direitos reservados</p>
+        </footer>
+    </div>
+
+    <script src="src/script.js"></script>
+</body>
+</html>

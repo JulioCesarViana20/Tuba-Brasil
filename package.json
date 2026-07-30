@@ -1,0 +1,24 @@
+{
+  "name": "tuba-brasil",
+  "version": "1.0.0",
+  "description": "Tuba-Brasil",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulioCesarViana20/Tuba-Brasil.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JulioCesarViana20/Tuba-Brasil/issues"
+  },
+  "homepage": "https://github.com/JulioCesarViana20/Tuba-Brasil#readme"
+}
