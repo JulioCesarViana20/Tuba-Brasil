@@ -29,7 +29,7 @@ body.admin-page {
     position: sticky;
     top: 0;
     z-index: 20;
-    padding: 0.8rem 0.9rem 0;
+    padding: 0.01rem 0.9rem 0;
 }
 
 .admin-header-inner {
@@ -55,13 +55,16 @@ body.admin-page {
 }
 
 .admin-link {
-    justify-self: start;
-    padding: 0.55rem 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 0.5rem 0.8rem;
     border-radius: 999px;
-    border: 1px solid #c7d7ff;
-    background: #f1f6ff;
-    color: #08132f;
     font-weight: 700;
+    color: var(--primary-deep);
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
 }
 
 .admin-header-inner .admin-link:last-child {
