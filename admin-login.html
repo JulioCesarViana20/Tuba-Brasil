@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Admin - Tuba Brasil</title>
+    <link rel="stylesheet" href="admin-login.css">
+</head>
+<body class="admin-login-page">
+    <main class="login-shell">
+        <section class="login-card">
+            <p class="eyebrow">Acesso restrito</p>
+            <h1>Painel administrativo</h1>
+            <p class="login-text">Entre com usuário e senha para acessar o CRUD da loja.</p>
+
+            <form id="admin-login-form" class="login-form" autocomplete="off">
+                <label for="admin-username">Usuário</label>
+                <input id="admin-username" name="username" required maxlength="80" placeholder="Digite seu usuário">
+
+                <label for="admin-password">Senha</label>
+                <input id="admin-password" name="password" type="password" required placeholder="Digite sua senha">
+
+                <button type="submit" class="btn btn-primary" id="admin-login-btn">Entrar</button>
+            </form>
+
+            <p id="admin-login-feedback" class="feedback" aria-live="polite"></p>
+            <a class="back-link" href="index.html">Voltar para a loja</a>
+        </section>
+    </main>
+
+    <script src="src/script.js"></script>
+</body>
+</html>

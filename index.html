@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <a class="skip-link" href="#colecao">Ir direto para a coleção</a>
     <div class="intro-splash" id="intro-splash" aria-hidden="true">
         <img src="img/logoOficial.png" alt="Logo Tuba Brasil" class="intro-splash-logo" width="200" height="200">
     </div>
@@ -39,8 +40,12 @@
                 <a href="#colecao">Coleção</a>
                 <a href="#contato">Contato</a>
             </nav>
-            <div class="cart-icon">
+            <div class="header-actions">
+                
+            <a class="cart-icon" href="cart.html" aria-label="Abrir carrinho">
                 <img src="img/carrinho.png" alt="Carrinho de compras">
+                <span id="cart-count" class="cart-badge" aria-live="polite">0</span>
+            </a>
             </div>
         </header>
 <!-- //introduction section -->
@@ -74,13 +79,10 @@
         <h3>O que temos hoje</h3>
     </div>
 
-    <div class="grid cards-grid">
+    <div class="grid cards-grid" id="products-grid" aria-live="polite"></div>
 
-        <article class="card">
-            <h4>Seu conforto!</h4>
-            <img src="img/sacolas.png" alt="Roupa 3" class="card-image">
-        </article>
-
+    <div class="collection-actions">
+        <a class="button primary" href="cart.html">Ir para o carrinho</a>
     </div>
 </section>
 
@@ -93,11 +95,12 @@
             <section id="contato" class="section container contact-panel">
                 <div class="section-heading">
                     <span class="eyebrow">Contato</span>
-                    <h3>fale conosco!</h3>
+                    <h3>Fale conosco!</h3>
                 </div>
                 <p>Email | WhatsApp</p>
                 <div class="contact-actions">
                     <a class="button primary" href="mailto:contato.tubabrasil@gmail.com">Enviar email</a>
+                    <a class="button primary" href="https://www.instagram.com/tubabrasill/">Abrir Instagram</a>
                     <a class="button secondary" href="https://wa.me/556282801375?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Tuba%20Brasil" target="_blank"><img class="zap" src="img/whatsapp.png" alt="WhatsApp"></a>
                     <a class="button third" href="#home">Voltar ao topo</a>
                 </div>
