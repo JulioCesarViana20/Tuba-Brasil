@@ -13,12 +13,15 @@ O **Tuba-Brasil** é um projeto de e-commerce front-end desenvolvido com foco em
 
 ---
 
-##  Tecnologias Utilizadas
+##  Tecnologias
 
-- **HTML5:** Estruturação das páginas.
-- **CSS3:** Estilização, layout flexível e responsividade.
-- **JavaScript (ES6+):** Lógica de negócios, manipulação do DOM e carrinho de compras.
-- **Node.js / Express:** Servidor local simples para execução da aplicação.
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- Node.js
+- Express.js
+- Mercado Pago API
+- Git & GitHub** Servidor local simples para execução da aplicação.
 
 ---
 
@@ -26,15 +29,25 @@ O **Tuba-Brasil** é um projeto de e-commerce front-end desenvolvido com foco em
 
 ```text
 .
-├── img/            # Arquivos de imagem e assets visuais
-├── src/            # Scripts e componentes JS do projeto
-├── test/           # Arquivos e rotinas de teste
-├── cart.css        # Estilos específicos da página do carrinho
-├── cart.html       # Página do carrinho de compras
-├── index.html      # Página principal / Catálogo da loja
-├── package.json    # Configurações do projeto Node e dependências
-├── server.js       # Servidor local Express
-└── style.css       # Estilos globais da aplicação
+📂 Estrutura do Projeto
+
+Tuba-Brasil/
+├── 📁 img/                  # Imagens e recursos visuais
+├── 📁 src/                  # Código-fonte da aplicação
+├── 📁 test/                 # Testes do projeto
+├── 📄 .env.example          # Exemplo das variáveis de ambiente
+├── 📄 .gitignore            # Arquivos ignorados pelo Git
+├── 📄 README.md             # Documentação do projeto
+├── 📄 admin-login.css       # Estilos da página de login do administrador
+├── 📄 admin-login.html      # Página de login do administrador
+├── 📄 admin.css             # Estilos do painel administrativo
+├── 📄 admin.html            # Painel administrativo
+├── 📄 cart.css              # Estilos do carrinho de compras
+├── 📄 cart.html             # Página do carrinho
+├── 📄 index.html            # Página inicial
+├── 📄 package.json          # Dependências e scripts do Node.js
+├── 📄 server.js             # Servidor e API da aplicação
+└── 📄 style.css             # Estilos globais
 ```
 
 ---
